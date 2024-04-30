@@ -1,46 +1,51 @@
 //  在阿里巴巴找图标，把需要用到的图标，添加至项目，生成在线链接，把链接里的代码复制到项目里
- //at.alicdn.com/t/c/font_4530256_wvsnqi6pfq.css
+//at.alicdn.com/t/c/font_4530257_dy029lyklbe.css
 
  @font-face {
-    font-family: "iconfont"; /* Project id 4530256 */
-    src: url('//at.alicdn.com/t/c/font_4530256_wvsnqi6pfq.woff2?t=1714401694202') format('woff2'),
-         url('//at.alicdn.com/t/c/font_4530256_wvsnqi6pfq.woff?t=1714401694202') format('woff'),
-         url('//at.alicdn.com/t/c/font_4530256_wvsnqi6pfq.ttf?t=1714401694202') format('truetype');
-  }
-  
-  .iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-jia:before {
-    content: "\e659";
-  }
-  
-  .icon-mianbao:before {
-    content: "\e66b";
-  }
-  
-  .icon-pinglun:before {
-    content: "\e641";
-  }
-  
-  .icon-aixin:before {
-    content: "\eca1";
-  }
-  
-  .icon-aixin1:before {
-    content: "\e8c3";
-  }
-  
-  .icon-shoucang:before {
-    content: "\e8c6";
-  }
-  
-  .icon-sousuo:before {
-    content: "\e7ec";
-  }
+  font-family: "iconfont"; /* Project id 4530257 */
+  src: url('//at.alicdn.com/t/c/font_4530257_dy029lyklbe.woff2?t=1714488014743') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4530257_dy029lyklbe.woff?t=1714488014743') format('woff'),
+       url('//at.alicdn.com/t/c/font_4530257_dy029lyklbe.ttf?t=1714488014743') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-donuts2:before {
+  content: "\e600";
+}
+
+.icon-jia:before {
+  content: "\e659";
+}
+
+.icon-mianbao:before {
+  content: "\e66b";
+}
+
+.icon-pinglun:before {
+  content: "\e641";
+}
+
+.icon-aixin:before {
+  content: "\eca1";
+}
+
+.icon-aixin1:before {
+  content: "\e8c3";
+}
+
+.icon-shoucang:before {
+  content: "\e8c6";
+}
+
+.icon-sousuo:before {
+  content: "\e7ec";
+}
+
   
