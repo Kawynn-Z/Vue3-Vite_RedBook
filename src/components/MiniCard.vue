@@ -6,7 +6,7 @@
           <polygon class="card-tri" stroke-linejoin="round" points="0,0 0,200 170,100"></polygon>
         </svg>
       </div>
-      <img :src="props.info.imageUrl" class="card-sorce" />
+      <img :src="props.info.imageUrl" class="card-sorce" @load="emits('onImgLoaded')" />
     </div>
     <div class="card-title">{{ props.info.content }}</div>
     <div class="card-button">
@@ -30,6 +30,8 @@ const props = defineProps(['info'])
 // let info=reactive({})
 // info = exploreCardsMock()
 
+const emits = defineEmits(['onImgLoaded'])
+
 </script>
 
 <style lang='scss' scoped>
@@ -40,7 +42,7 @@ const props = defineProps(['info'])
   border-radius: 0.5rem;
   box-shadow: 0 .125rem .3125rem rgb(181, 181, 191, 0.1);
   overflow: hidden;
-  // position: absolute;
+  position: absolute;
 
   .card-top {
     position: relative;
