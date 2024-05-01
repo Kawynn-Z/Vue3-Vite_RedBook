@@ -4,18 +4,19 @@
     <div class="home-swiper-head">
       <i class="iconfont icon-donuts2"></i>
       <div class="swiper-name">
-        <span v-for="(item,idx) in moduleList" @click="changeSwiper(idx)" :class="{active : idx === moduleIdx}">{{ item }}</span>
+        <span v-for="(item,idx) in moduleList" @click="changeSwiper(idx)"  :class="{active : idx === moduleIdx}">{{ item }}</span>
       </div>
       <i class="iconfont icon-sousuo"></i>
     </div>
 
     <!-- 内容 -->
-    <swiper @swiper="onSwiper" @slipdeChange="onSlipdeChange" class="my-swiper">
+    <swiper @swiper="onSwiper" @slipdeChange="onSlipdeChange" :initialSlide="moduleIdx" class="my-swiper">
       <swiper-slide>
         <div class="slide-content">11</div>
       </swiper-slide>
       <swiper-slide>
-        <div class="slide-content">22</div>
+        <!-- <div class="slide-content">22</div> -->
+        <Explore></Explore>
       </swiper-slide>
       <swiper-slide>
         <div class="slide-content">33</div>
@@ -28,6 +29,7 @@
 import { ref,reactive } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
+import Explore from './Explore.vue';
 
 const moduleList = reactive(['关注','发现','附近'])
 
@@ -58,7 +60,7 @@ const onSlipdeChange = ({activeIndex}) => {
  .home-container{
   .my-swiper{
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 
     .slide-content{
       @include flexcc;
@@ -71,7 +73,7 @@ const onSlipdeChange = ({activeIndex}) => {
     left: 0;
     height: 3rem;
     right: 0;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     padding: 0 1rem;
     z-index: 2;
     @include flexbc;
@@ -83,6 +85,7 @@ const onSlipdeChange = ({activeIndex}) => {
     .iconfont:nth-child(1){
       color: rgb(247, 230, 86)
     }
+    
     .swiper-name{
       @include flexcc;
       font-size: 0.9rem;
@@ -100,7 +103,6 @@ const onSlipdeChange = ({activeIndex}) => {
       }
     }
   }
-  
   
 }
 </style>
