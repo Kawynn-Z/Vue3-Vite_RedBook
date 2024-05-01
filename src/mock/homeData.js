@@ -4,7 +4,7 @@ const exploreCardsMock = ()=>{
         isVideo:1,
         imageUrl:'src/mock/images/img01.jpg',
         content:'test test pinkbook test test pingkbooktest test pingkbooktest test pingkbook ',
-        avatar:'src/mock/images/h01.png',
+        avatar:'src/mock/images/h01.jpg',
         author:'TheZ',
         likeCount:100
     }

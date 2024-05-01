@@ -6,7 +6,7 @@
           <polygon class="card-tri" stroke-linejoin="round" points="0,0 0,200 170,100"></polygon>
         </svg>
       </div>
-      <img :src="info.imageUrl" class="card-sorce">
+      <img :src="info.imageUrl" class="card-sorce"/>
     </div>
     <div class="card-title">{{ info.content }}</div>
     <div class="card-button">
@@ -62,8 +62,11 @@ info = exploreCardsMock()
         }
       }
     }
-    .card-source{
+    // 让图片高度随着宽度自适应，图片比例保持不变（用类名写不起作用，要用img标签！！！）
+    // .card-source{
+    img{
       width: 100%;
+      
     }
   }
   .card-title{
@@ -93,20 +96,23 @@ info = exploreCardsMock()
       .card-name{
         color: rgb(59, 59, 59);
         font-size: 0.5rem;
-        margin-left:0 0 0 0.4375rem;
+        // margin-left:0 0 0 0.4375rem; 博主有一些地方写错了
+        margin-left:0.4375rem;
       }
     }
     .card-b-right{
       @include flexxl;
       .icon-card-small{
-        font-size: 0.5rem;
+        // font-size: 0.5rem;
+        font-size: .75rem;
         color: rgb(128, 125, 125);
       }
 
       .card-like{
         margin: 0 0 0 0.3rem;
         color: rgb(128, 125, 125);
-        font-size: 0.5rem;
+        // font-size: 0.5rem;
+        font-size: .75rem;
       }
     }
   }
